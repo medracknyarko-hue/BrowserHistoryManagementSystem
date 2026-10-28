@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Browser History Stack System</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>Browser History Stack System</h1>
+
+        <p>A Data Structures Project Using the Stack (LIFO)</p>
+
+    </header>
+
+    <main>
+
+        <section class="browser">
+
+            <h2>Browser Simulator</h2>
+
+            <form id="visitForm">
+
+                <input
+
+                    type="text"
+
+                    id="pageInput"
+
+                    placeholder="Enter a page name or URL"
+
+                    required
+
+                >
+
+                <button type="submit">Visit Page</button>
+
+            </form>
+
+            <div class="controls">
+
+                <button id="backBtn" type="button">← Back</button>
+
+                <button id="forwardBtn" type="button">Forward →</button>
+
+                <button id="clearBtn" type="button">Clear History</button>
+
+            </div>
+
+            <div class="current">
+
+                <h3>Current Page</h3>
+
+                <p id="currentPage">No page visited yet</p>
+
+            </div>
+
+            <p id="message" role="status"></p>
+
+        </section>
+
+        <section class="history">
+
+            <h2>Back Stack</h2>
+
+            <p>The most recently left page is on top.</p>
+
+            <ul id="backHistory"></ul>
+
+            <h2>Forward Stack</h2>
+
+            <ul id="forwardHistory"></ul>
+
+            <h2>Stack Operations</h2>
+
+            <p><strong>Push:</strong> Add a page to a stack.</p>
+
+            <p><strong>Pop:</strong> Remove the top page from a stack.</p>
+
+            <p><strong>Peek:</strong> View the top page without removing it.</p>
+
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>Browser History Stack System | HTML, CSS and JavaScript</p>
+
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
